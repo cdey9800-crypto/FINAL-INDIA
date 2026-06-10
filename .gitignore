@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Lock files - keep pnpm-lock.yaml for consistency
+# pnpm-lock.yaml should be committed
+
+# Build outputs (keep the bundle in public/ as it's needed for deployment)
+# public/speed-insights.bundle.js should be committed
+
+# System files
+.DS_Store
+*.log
