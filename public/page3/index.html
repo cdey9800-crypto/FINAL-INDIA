@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Story Page 3</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#000;font-family:Arial,sans-serif}
+.main-header{position:fixed;top:0;left:0;width:100%;background:#ffeb3b;padding:4px;text-align:center;z-index:1000}
+.main-header h1{margin:0;font-size:16px}
+.header-badge{position:absolute;left:10px;top:50%;transform:translateY(-50%);width:28px;height:28px;line-height:28px;border-radius:50%;background:red;color:#fff;text-align:center;font-weight:bold}
+.wrapper{max-width:520px;margin:5px auto 0;padding:10px}
+.ad-top,.ad-bottom{background:#f1f1f1;padding:12px;border-radius:10px;text-align:center;margin:10px 0;color:#666}
+.image-box{position:relative}
+video{width:100%;height:300px;object-fit:cover;border-radius:12px;display:block}
+.prev{position:absolute;left:10px;top:50%;transform:translateY(-50%);background:#666;color:#fff;text-decoration:none;padding:12px 18px;border-radius:8px;font-weight:bold;z-index:10}
+.next{position:absolute;right:10px;top:50%;transform:translateY(-50%);background:#007bff;color:#fff;text-decoration:none;padding:12px 18px;border-radius:8px;font-weight:bold;z-index:10}
+.end-message{display:none;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,.85);color:#fff;padding:10px 20px;border-radius:8px;font-weight:bold}
+.story{background:#111;color:#fff;padding:15px;border-radius:12px;line-height:1.6;margin-top:12px}
+@media(max-width:480px){video{height:250px}}
+
+.part-badge{
+position:absolute;
+top:8px;
+left:8px;
+background:#ff0000;
+color:#fff;
+font-size:11px;
+font-weight:bold;
+padding:3px 8px;
+border-radius:6px;
+z-index:10;
+}
+</style>
+
+</head>
+<body>
+<div class="main-header">
+
+<h1>मलकिन बोली 'मत चूहो; पर जिसमा की प्यास थी</h1>
+</div>
+
+<div class="wrapper">
+<div class="ad-top"><script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23304297073/320x100', [320, 100], 'div-gpt-ad-1781057823430-0').addService(googletag.pubads());
+    googletag.enableServices();
+  });
+</script><!-- /23304297073/320x100 -->
+<div id='div-gpt-ad-1781057823430-0' style='min-width: 320px; min-height: 100px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1781057823430-0'); });
+  </script>
+</div>
+</div>
+
+<div class="image-box"><div class="part-badge">PART 3 </div>
+<video id="mainVideo" controls playsinline muted preload="auto">
+<source src="https://snapplanets.org/wp-content/uploads/2026/06/part3split-video.com_.mp4" type="video/mp4">
+</video>
+
+<a class="prev" href="/page2/">PREV</a>
+<a class="next" href="/page4/">NEXT</a>
+
+<div class="end-message" id="videoEndedMessage">👉 Click NEXT</div>
+</div>
+
+<div class="story">
+रेखा की नजरें उस पर अटक गईं। लालसा की चिंगारी जाग उठी, वह पास आई और बातों के बहाने उसकी बांह को छू लिया।
+</div>
+
+<div class="ad-bottom"><script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/23304297073/300x250', [300, 250], 'div-gpt-ad-1781057886428-0').addService(googletag.pubads());
+    googletag.enableServices();
+  });
+</script><!-- /23304297073/300x250 -->
+<div id='div-gpt-ad-1781057886428-0' style='min-width: 300px; min-height: 250px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1781057886428-0'); });
+  </script>
+</div></div>
+</div>
+
+<script>
+const video=document.getElementById('mainVideo');
+const msg=document.getElementById('videoEndedMessage');
+video.addEventListener('ended',()=>msg.style.display='block');
+video.addEventListener('play',()=>msg.style.display='none');
+</script>
+</body>
+</html>
+
+<script>
+window.addEventListener('load', () => {
+    const video = document.getElementById('mainVideo');
+    if (!video) return;
+
+    video.muted = true;
+
+    video.play().then(() => {
+        setTimeout(() => {
+            video.pause();
+            video.currentTime = 1;
+        }, 1000);
+    }).catch(() => {});
+
+    video.addEventListener('play', () => {
+        if (video.currentTime >= 1) {
+            video.muted = false;
+        }
+    });
+});
+</script>

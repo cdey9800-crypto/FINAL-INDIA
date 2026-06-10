@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="refresh" content="0;url=/page1/"></head><body></body></html>
+
+<script>
+window.addEventListener('load', () => {
+    const video = document.getElementById('mainVideo');
+    if (!video) return;
+
+    video.muted = true;
+
+    video.play().then(() => {
+        setTimeout(() => {
+            video.pause();
+            video.currentTime = 1;
+        }, 1000);
+    }).catch(() => {});
+
+    video.addEventListener('play', () => {
+        if (video.currentTime >= 1) {
+            video.muted = false;
+        }
+    });
+});
+</script>
